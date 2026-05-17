@@ -1,42 +1,16 @@
 ---
-title: 開始撰寫文章
-description: SHBlog Next 是一個基於 Astro 的部落格主題，讓你可以輕鬆地撰寫和發布文章。以下是一些關於如何開始撰寫文章的指南。
-pubDate: 2022-07-08T04:00:00.000Z
-heroImage: ../../assets/blog-placeholder-3.jpg
-category: ["範例分類"]
-draft: false
-tags:
-  - 範例標籤1
+title: 'First post'
+description: 'Lorem ipsum dolor sit amet'
+pubDate: 'Jul 08 2022'
+heroImage: '../../assets/blog-placeholder-3.jpg'
 ---
 
-SHBlog Next 是一個基於 Astro 的部落格主題，讓你可以輕鬆地撰寫和發布文章。以下是一些關於如何開始撰寫文章的指南。
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
 
-## 編輯你的第一篇文章
+Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.
 
-你可以使用任何你喜歡的 Markdown 編輯器來撰寫文章。建議使用支援 Markdown 語法高亮和預覽功能的編輯器，例如 Visual Studio Code、Typora 或 Obsidian。
+Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
 
-如果你使用的是 Visual Studio Code，強烈推薦你可以安裝 [Front Matter CMS](https://frontmatter.codes/) 外掛來協助你編輯文章的 frontmatter 部分，讓你更方便地管理文章的 metadata。
+Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.
 
-## 建立一篇草稿文章
-
-如果你想先撰寫一篇草稿文章，可以在 `src/content/blog/` 目錄下創建一個新的 Markdown 文件，例如 `draft-example.md`，並在 frontmatter 中設置 `draft: true`。這樣這篇文章就只會在開發環境中可見，不會被編譯到生產環境中。
-
-```diff "draft: true"
----
-title: 這是一篇草稿文章
-description: 這篇文章只在開發環境可見
-+ draft: true
----
-
-你可以開始在這裡寫文章了
-```
-
-## Markdown 語法
-
-SHBlog Next 支援標準的 Markdown 語法，讓你可以輕鬆地格式化你的文章內容。需要更多資訊，你可以閱讀預設文章之中的「範例文章」，另外你也可以參考 [Markdown 語法指南](https://www.markdownguide.org/basic-syntax/) 來了解更多 Markdown 的使用方法。
-
-## 發布文章
-
-當你完成文章的撰寫後，只需要將 Markdown 文件保存到 `src/content/blog/` 目錄下，SHBlog Next 就會自動識別並編譯你的文章。你可以使用 `nr dev` 命令在本地預覽你的文章，確保一切看起來都符合你的預期。當你準備好發布文章時，只需要使用 `nr build` 命令來編譯你的網站，然後使用 `nr preview` 來預覽生產環境的效果。
-
-需要部署到線上嗎？你可以將編譯後的網站部署到任何靜態網站托管服務，例如 [Netlify](https://www.netlify.com)、[Vercel](https://vercel.com) 或 [GitHub Pages](https://pages.github.com)。順帶一提，我們最推薦的是 [Cloudflare Pages](https://pages.cloudflare.com/)，因為它提供了免費的 SSL、CDN 和無限的帶寬，非常適合部署 SHBlog Next 這樣的靜態網站。
+Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.

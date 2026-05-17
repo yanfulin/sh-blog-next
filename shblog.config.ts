@@ -134,16 +134,14 @@ import { defineConfig } from "@/utils/define-config";
 
 //   // 作者（站長）資訊
 //   author: {
-//     name: "SamHacker", // 網站站長名稱
-//     bio: "我是一個熱愛分享技術的部落客，專注於 Minecraft 開服、網站建設、開源軟體等領域。", // 簡短自我介紹
-//     // 詳細自我介紹請在 src/pages/about.astro 中編輯
+  //     name: "Yanfu Lin", // 網站站長名稱
+  //     bio: "吃飯吃七分飽，做事用八分力就好！人生是修行！", // 簡短自我介紹
+  //     // 詳細自我介紹請在 src/pages/about.astro 中編輯
 
-//     email: "xux510208@gmail.com", // 聯絡電子郵件
-//     // 頭像圖片的完整 URL 或相對路徑
-//     avatarUrl:
-//       "https://gravatar.com/avatar/f7598bd8d4aba38d7219341f81a162fc842376b3b556b1995cbb97271d9e2915?v=1753291388000&size=256&d=initials",
-
-//     // 社交媒體連結
+  //     email: "yanful@example.com", // 聯絡電子郵件
+  //     // 頭像圖片的完整 URL 或相對路徑
+  //     avatarUrl:
+  //       "https://gravatar.com/avatar/11d3e8fd1da8f0e2a9fd5c6e5d8f1a3b?v=1&size=256&d=initials",
 //     links: [
 //       // 如需其他的社交媒體圖標，請在 AuthorCard 元件中添加相應的圖標映射
 //       {
@@ -426,23 +424,31 @@ import { defineConfig } from "@/utils/define-config";
 // };
 
 const config = defineConfig({
+  title: "Yanfu Lin's Blog",
+  description: "吃飯吃七分飽，做事用八分力就好！",
+  lang: "en",
+  author: {
+    name: "Yanfu Lin",
+    bio: "吃飯吃七分飽，做事用八分力就好！人生是修行！",
+    email: "contact@yanfulin.com",
+    links: [
+      {
+        icon: "Github",
+        to: "https://github.com/yanfulin",
+        label: "GitHub",
+      },
+    ],
+  },
+  pages: {
+    home: {
+      title: "吃飯吃七分飽，\n做事用八分力就好！",
+    },
+  },
   behavior: {
     commentConfig: {
-      enableComment: "Giscus",
-      giscusConfig: {
-        repo: "510208/utterances",
-        repoId: "R_kgDOKOthQw",
-        category: "Announcements",
-        categoryId: "DIC_kwDOKOthQ84Czwi8",
-        mapping: "og:title",
-        strict: "0",
-        reactionsEnabled: "1",
-        emitMetadata: "1",
-        inputPosition: "top",
-        theme: "transparent_dark",
-        lang: "zh-TW",
-      },
+      enableComment: false,
     },
+    enableGTM: false,
   },
 }); // 使用 defineConfig 函式定義設定，並提供部分覆蓋設定
 
